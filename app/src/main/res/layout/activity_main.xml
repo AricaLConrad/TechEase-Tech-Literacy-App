@@ -45,6 +45,7 @@
         android:paddingBottom="9dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/start_tutorial"
+        android:onClick="goToMediaActivity"
         android:textAllCaps="false"
         android:textSize="22sp"
         android:typeface="normal"
