@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Context context = getApplicationContext();
         String message = "Activity switch was attempted";
         int duration = Toast.LENGTH_SHORT;
-        Toast.makeText(context, message, duration).show();
+        Log.i("INFO", message);
         startActivity(intent);
     }
 }
