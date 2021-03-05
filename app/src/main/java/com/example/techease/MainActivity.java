@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void goToMediaActivity(View view) {
+/*    public void goToMediaActivity(View view) {
         Intent intent = new Intent(this, MediaActivity.class);
         Context context = getApplicationContext();
         String message = "Activity switch was attempted";
         int duration = Toast.LENGTH_SHORT;
         Log.i("INFO", message);
         startActivity(intent);
-    }
+    }*/
 }
