@@ -20,7 +20,7 @@
         tools:layout="@layout/activity_media" />
     <fragment
         android:id="@+id/tutorialFragment"
-        android:name="com.example.techease.fragments.TutorialFragment"
+        android:name="com.example.techease.fragments.GroupedTutorialsFragment"
         android:label="fragment_tutorial"
         tools:layout="@layout/fragment_tutorial" />
 </navigation>

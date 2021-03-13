@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 
 import com.example.techease.R;
 
-public class TutorialFragment extends Fragment {
+public class GroupedTutorialsFragment extends Fragment {
 
-    public TutorialFragment() {
+    public GroupedTutorialsFragment() {
         // Required empty public constructor
     }
 
