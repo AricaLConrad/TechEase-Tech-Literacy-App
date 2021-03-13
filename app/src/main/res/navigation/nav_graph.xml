@@ -7,17 +7,20 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.techease.MainFragment"
+        android:name="com.example.techease.fragments.MainFragment"
         android:label="MainFragment" >
         <action
-            android:id="@+id/action_mainFragment_to_mediaActivity"
-            app:destination="@id/mediaActivity"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            android:id="@+id/action_mainFragment_to_tutorialFragment"
+            app:destination="@id/tutorialFragment" />
     </fragment>
     <activity
         android:id="@+id/mediaActivity"
         android:name="com.example.techease.MediaActivity"
         android:label="activity_media"
         tools:layout="@layout/activity_media" />
+    <fragment
+        android:id="@+id/tutorialFragment"
+        android:name="com.example.techease.fragments.TutorialFragment"
+        android:label="fragment_tutorial"
+        tools:layout="@layout/fragment_tutorial" />
 </navigation>

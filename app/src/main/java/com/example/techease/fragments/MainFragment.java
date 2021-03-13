@@ -1,4 +1,4 @@
-package com.example.techease;
+package com.example.techease.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+
+import com.example.techease.R;
 
 public class MainFragment extends Fragment implements View.OnClickListener {
 
@@ -35,7 +37,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.start_tutorials_button:
-                navCon.navigate(R.id.action_mainFragment_to_mediaActivity);
+                navCon.navigate(R.id.action_mainFragment_to_tutorialFragment);
                 break;
         }
     }
