@@ -12,8 +12,7 @@
     <string name="apps_tut">Apps</string>
     <string name="internet">Internet</string>
     <string name="social_media">Social Media</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="instruction">Tap a button below to learn more about that tutorial</string>
 
 
 </resources>

@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/phone_feature"
+        android:id="@+id/phone_feature_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tutorial_instr" />
 
     <Button
-        android:id="@+id/app_tutorial"
+        android:id="@+id/app_tutorial_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -61,10 +61,10 @@
         app:strokeWidth="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_feature" />
+        app:layout_constraintTop_toBottomOf="@+id/phone_feature_btn" />
 
     <Button
-        android:id="@+id/internet"
+        android:id="@+id/internet_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -82,10 +82,10 @@
         app:strokeWidth="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_tutorial" />
+        app:layout_constraintTop_toBottomOf="@+id/app_tutorial_btn" />
 
     <Button
-        android:id="@+id/social_media"
+        android:id="@+id/social_media_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -103,5 +103,5 @@
         app:strokeWidth="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/internet" />
+        app:layout_constraintTop_toBottomOf="@+id/internet_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

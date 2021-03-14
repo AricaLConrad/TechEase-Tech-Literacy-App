@@ -22,5 +22,14 @@
         android:id="@+id/tutorialFragment"
         android:name="com.example.techease.fragments.GroupedTutorialsFragment"
         android:label="fragment_tutorial"
-        tools:layout="@layout/fragment_tutorial" />
+        tools:layout="@layout/fragment_grouped_tutorial" >
+        <action
+            android:id="@+id/action_tutorialFragment_to_detailTutorialsFragment"
+            app:destination="@id/detailTutorialsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTutorialsFragment"
+        android:name="com.example.techease.fragments.DetailTutorialsFragment"
+        android:label="fragment_detail_tutorials"
+        tools:layout="@layout/fragment_detail_tutorials" />
 </navigation>
