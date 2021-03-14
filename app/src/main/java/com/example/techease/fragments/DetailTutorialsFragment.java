@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.techease.ListOfTutorials;
 import com.example.techease.R;
 import com.example.techease.TutorialAdapter;
 import com.example.techease.models.Tutorial;
@@ -22,16 +23,25 @@ import java.util.ArrayList;
 
 public class DetailTutorialsFragment extends Fragment {
 
+    ArrayList<Tutorial> tutorialList = new ArrayList<>();
+    ListOfTutorials listOfTutorials;
 
     public DetailTutorialsFragment() {
         // Required empty public constructor
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        listOfTutorials = new ListOfTutorials();
 
-        ArrayList<Tutorial> tutorialList = getArguments().getParcelableArrayList("feature");
+        if (getArguments().getInt("tutorial") == 1){
+            tutorialList = listOfTutorials.phoneFeaturesList();
+        } else if (getArguments().getInt("tutorial") == 2){
+            tutorialList = listOfTutorials.appTutorialList();
+        }
+
         RecyclerView tutorialRv = view.findViewById(R.id.tutotial_list);
         tutorialRv.setLayoutManager(new LinearLayoutManager(getContext()));
         TutorialAdapter tutorialAdapter = new TutorialAdapter(tutorialList);

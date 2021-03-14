@@ -43,6 +43,7 @@ public class TutorialAdapter extends RecyclerView.Adapter<TutorialAdapter.Tutori
         return tutorialList.size();
     }
 
+
     public class TutorialViewHolder extends RecyclerView.ViewHolder {
 
         private TextView tutorialName;

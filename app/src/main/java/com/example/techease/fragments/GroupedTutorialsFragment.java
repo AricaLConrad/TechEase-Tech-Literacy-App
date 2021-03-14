@@ -45,20 +45,18 @@ public class GroupedTutorialsFragment extends Fragment implements View.OnClickLi
         return inflater.inflate(R.layout.fragment_grouped_tutorial, container, false);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     public void onClick(View v) {
 
-        ListOfTutorials listOfTutorials = new ListOfTutorials();
-        ArrayList<Tutorial> featureList = listOfTutorials.phoneFeaturesList();
+        Bundle bundle = new Bundle();
         switch (v.getId()){
             case R.id.phone_feature_btn:
-                Bundle bundle = new Bundle();
-                bundle.putParcelableArrayList("feature", featureList);
+                bundle.putInt("tutorial", 1);
                 navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment, bundle);
                 break;
             case R.id.app_tutorial_btn:
-                navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment);
+                bundle.putInt("tutorial", 2);
+                navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment, bundle);
                 break;
             case R.id.internet_btn:
                 navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment);
