@@ -31,5 +31,14 @@
         android:id="@+id/detailTutorialsFragment"
         android:name="com.example.techease.fragments.DetailTutorialsFragment"
         android:label="fragment_detail_tutorials"
-        tools:layout="@layout/fragment_detail_tutorials" />
+        tools:layout="@layout/fragment_detail_tutorials" >
+        <action
+            android:id="@+id/action_detailTutorialsFragment_to_overviewFragment"
+            app:destination="@id/overviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="com.example.techease.fragments.OverviewFragment"
+        android:label="fragment_overview"
+        tools:layout="@layout/fragment_overview" />
 </navigation>

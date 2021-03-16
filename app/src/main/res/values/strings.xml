@@ -12,7 +12,13 @@
     <string name="apps_tut">Apps</string>
     <string name="internet">Internet</string>
     <string name="social_media">Social Media</string>
-    <string name="instruction">Tap a button below to learn more about that tutorial</string>
+    <string name="instruction">Tap a button below to learn more about that tutorial:</string>
+
+    <string name="intru">The Texting Tutorial will teach you the following:</string>
+    <string name="overview">Opening up The message App, Creating and sending a text message,
+    understand the keyboard, replying to a text message, Creating and replying to a group message,
+    and sending images and videos through a text</string>
+    <string name="start">Start Tutorial</string>
 
 
 </resources>

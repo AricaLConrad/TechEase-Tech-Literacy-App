@@ -1,6 +1,7 @@
-package com.example.techease;
+package com.example.techease.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.techease.R;
 import com.example.techease.models.Tutorial;
 
 import java.util.ArrayList;
@@ -17,10 +19,17 @@ import java.util.ArrayList;
 public class TutorialAdapter extends RecyclerView.Adapter<TutorialAdapter.TutorialViewHolder> {
 
     private ArrayList<Tutorial> tutorialList = new ArrayList<>();
+    private final TutorialOnClickHandler clickHandler;
 
-    public TutorialAdapter(ArrayList<Tutorial> tutorialList) {
-        this.tutorialList = tutorialList;
+    public interface TutorialOnClickHandler{
+        void onClick(String tutorialName, int position);
     }
+
+    public TutorialAdapter(ArrayList<Tutorial> tutorialList, TutorialOnClickHandler clickHandler) {
+        this.tutorialList = tutorialList;
+        this.clickHandler = clickHandler;
+    }
+
 
     @NonNull
     @Override
@@ -44,14 +53,14 @@ public class TutorialAdapter extends RecyclerView.Adapter<TutorialAdapter.Tutori
     }
 
 
-    public class TutorialViewHolder extends RecyclerView.ViewHolder {
+    public class TutorialViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         private TextView tutorialName;
         private ImageView tutorialImg;
 
         public TutorialViewHolder(@NonNull View itemView) {
             super(itemView);
-
+            itemView.setOnClickListener(this);
             tutorialName = itemView.findViewById(R.id.tutorial_label);
             tutorialImg = itemView.findViewById(R.id.tutorial_icon);
         }
@@ -62,6 +71,15 @@ public class TutorialAdapter extends RecyclerView.Adapter<TutorialAdapter.Tutori
 
         public ImageView getTutorialImg() {
             return tutorialImg;
+        }
+
+        @Override
+        public void onClick(View v) {
+            int adapterPosition = getAdapterPosition();
+            Tutorial tutorial = tutorialList.get(adapterPosition);
+
+            String name = tutorial.getTutorialName();
+            clickHandler.onClick(name, adapterPosition);
         }
     }
 }
