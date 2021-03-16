@@ -13,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
         android:layout_marginTop="42dp"
         android:text="@string/intru"
         android:textColor="@color/blue_01"
