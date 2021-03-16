@@ -1,6 +1,8 @@
 package com.example.techease;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -16,6 +18,15 @@ public class MediaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_media);
+        Log.i("INFO", "Activity created??");
+
+        Intent intent = getIntent();
+        String tutorialTitle = intent.getStringExtra(MainActivity.s);
+        Log.i("INFO", "Activity got extra as: "+ tutorialTitle);
+        TextView tutorialVideoTitle = findViewById(R.id.extraView);
+        tutorialVideoTitle.setText(tutorialTitle);
+        //This grabs the passed tutorial name and sets it as the title of the video for the tutorial in this activity.
+        //in the future we could pass variables to load transcript text and video urls as well.
 
         YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
         getLifecycle().addObserver(youTubePlayerView);
