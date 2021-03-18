@@ -35,4 +35,17 @@ public class ListOfTutorials {
         }
         return appList;
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.R)
+    public ArrayList<Tutorial>internetList(){
+        List<String> listOfInternetTut = List.of("Ads safety", "Personal Info on Web", "Safe Browsing",
+                "Online Purchase", "Antivirus", "Password Online", "Download Online", "Post Online");
+
+        ArrayList<Tutorial> internetList = new ArrayList<>();
+        for (int i = 0; i < listOfInternetTut.size(); i++){
+            internetList.add(new Tutorial(listOfInternetTut.get(i), R.drawable.internet));
+        }
+
+        return internetList;
+    }
 }

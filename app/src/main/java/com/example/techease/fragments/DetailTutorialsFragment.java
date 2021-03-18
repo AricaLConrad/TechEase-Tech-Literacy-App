@@ -44,6 +44,8 @@ public class DetailTutorialsFragment extends Fragment implements TutorialAdapter
             tutorialList = listOfTutorials.phoneFeaturesList();
         } else if (getArguments().getInt("tutorial") == 2){
             tutorialList = listOfTutorials.appTutorialList();
+        } else if (getArguments().getInt("tutorial") == 3){
+            tutorialList = listOfTutorials.internetList();
         }
 
         RecyclerView tutorialRv = view.findViewById(R.id.tutotial_list);

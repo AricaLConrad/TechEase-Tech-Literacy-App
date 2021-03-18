@@ -37,6 +37,8 @@
     <string name="setting_instru">Tap a button to see Accessibility options or Notification</string>
     <string name="accessibility">Accessibility</string>
     <string name="notification">Notification</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="notification_alert">There is no notification at this time. Please come back later!</string>
 
 
 </resources>
