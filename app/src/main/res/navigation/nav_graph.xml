@@ -48,5 +48,22 @@
         android:id="@+id/settingFragment"
         android:name="com.example.techease.fragments.SettingFragment"
         android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_accessibilityFragment"
+            app:destination="@id/accessibilityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.techease.fragments.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/accessibilityFragment"
+        android:name="com.example.techease.fragments.AccessibilityFragment"
+        android:label="fragment_accessibility"
+        tools:layout="@layout/fragment_accessibility" />
 </navigation>

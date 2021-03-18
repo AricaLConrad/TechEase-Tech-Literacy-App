@@ -59,10 +59,12 @@ public class GroupedTutorialsFragment extends Fragment implements View.OnClickLi
                 navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment, bundle);
                 break;
             case R.id.internet_btn:
-                navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment);
+                bundle.putInt("tutorial", 3);
+                navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment, bundle);
                 break;
             case R.id.social_media_btn:
-                navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment);
+                bundle.putInt("tutorial", 4);
+                navCon.navigate(R.id.action_tutorialFragment_to_detailTutorialsFragment, bundle);
                 break;
         }
 

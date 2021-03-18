@@ -38,5 +38,11 @@
     <string name="accessibility">Accessibility</string>
     <string name="notification">Notification</string>
 
+    <string name="notification_alert">There is no notification at this time. Please come back later!</string>
+    <string name="access_instruction">Tap a button to customize your accessibility options</string>
+    <string name="text_to_speech">Text-to-Speech</string>
+    <string name="vision_option">Vision Options</string>
+    <string name="voice_command">Voice Command</string>
+
 
 </resources>

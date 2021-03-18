@@ -4,25 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SettingFragment">
+    tools:context=".fragments.AccessibilityFragment">
 
     <TextView
-        android:id="@+id/setting_instru"
+        android:id="@+id/access_instru"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:text="@string/access_instruction"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:gravity="center"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:text="@string/setting_instru"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/access_btn"
+        android:id="@+id/textToSpeech_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -32,19 +30,20 @@
         android:fontFamily="sans-serif-medium"
         android:paddingTop="9dp"
         android:paddingBottom="9dp"
-        android:text="@string/accessibility"
+        android:text="@string/text_to_speech"
         android:textAllCaps="false"
         android:textSize="22sp"
-        app:icon="@drawable/accessibility"
+        android:typeface="normal"
+        app:icon="@drawable/text_to_speech"
         app:iconTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/setting_instru"
+        app:layout_constraintTop_toBottomOf="@+id/access_instru"
         app:strokeColor="@color/blue_01"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"/>
 
     <Button
-        android:id="@+id/notification_btn"
+        android:id="@+id/visionOption_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="38dp"
@@ -54,15 +53,39 @@
         android:fontFamily="sans-serif-medium"
         android:paddingTop="9dp"
         android:paddingBottom="9dp"
-        android:text="@string/notification"
+        android:text="@string/vision_option"
         android:textAllCaps="false"
         android:textSize="22sp"
-        app:icon="@drawable/notification"
+        android:typeface="normal"
+        app:icon="@drawable/vision_icon"
         app:iconTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/access_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textToSpeech_btn"
         app:strokeColor="@color/blue_01"
-        app:strokeWidth="1dp" />
+        app:strokeWidth="1dp"/>
+
+    <Button
+        android:id="@+id/voice_cmd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="@color/blue_02"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/voice_command"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:typeface="normal"
+        app:icon="@drawable/voice_command"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visionOption_btn"
+        app:strokeColor="@color/blue_01"
+        app:strokeWidth="1dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
