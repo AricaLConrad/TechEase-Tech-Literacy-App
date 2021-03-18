@@ -38,7 +38,7 @@ public class ListOfTutorials {
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     public ArrayList<Tutorial>internetList(){
-        List<String> listOfInternetTut = List.of( "Web 101","Ads safety", "Personal Info on Web",
+        List<String> listOfInternetTut = List.of( "Web 101","Ads safety", "Cookies", "Using search Engine", "Personal Info on Web",
                 "Safe Browsing", "Online Purchase", "Antivirus", "Password Online"
                 , "Download Online", "Post Online");
 
@@ -51,8 +51,8 @@ public class ListOfTutorials {
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     public ArrayList<Tutorial>socialMediaList(){
-        List<String> listOfSMTutorial = List.of("Social media 101", "Facebook", "Instagram", "SnapChat"
-                , "TiK ToK", "Twitter", "Pinterest", "YouTube", "Messenger");
+        List<String> listOfSMTutorial = List.of("Social media 101", "Zoom", "Facebook", "Instagram", "SnapChat"
+                , "TiK ToK", "Twitter", "Pinterest", "YouTube", "Messenger", "FaceTime");
 
         ArrayList<Tutorial> mediaList = new ArrayList<>();
         for (int i = 0; i < listOfSMTutorial.size(); i++){
