@@ -52,7 +52,7 @@ public class ListOfTutorials {
     @RequiresApi(api = Build.VERSION_CODES.R)
     public ArrayList<Tutorial>socialMediaList(){
         List<String> listOfSMTutorial = List.of("Social media 101", "Zoom", "Facebook", "Instagram", "SnapChat"
-                , "TiK ToK", "Twitter", "Pinterest", "YouTube", "Messenger");
+                , "TiK ToK", "Twitter", "Pinterest", "YouTube", "Messenger", "FaceTime");
 
         ArrayList<Tutorial> mediaList = new ArrayList<>();
         for (int i = 0; i < listOfSMTutorial.size(); i++){
