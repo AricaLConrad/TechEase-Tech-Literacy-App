@@ -21,7 +21,7 @@ public class HelpActivity extends AppCompatActivity {
         Button emailUsBtn = findViewById(R.id.email_btn);
 
         callUsBtn.setOnClickListener(v -> {
-            Uri number = Uri.parse("tel:2265240");
+            Uri number = Uri.parse("tel:5244549");
             Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
             startActivity(callIntent);
         });
@@ -35,7 +35,6 @@ public class HelpActivity extends AppCompatActivity {
             } catch (ActivityNotFoundException e) {
                 Toast.makeText(this,"No Email Application Found", Toast.LENGTH_LONG).show();
             }
-
 
         });
     }

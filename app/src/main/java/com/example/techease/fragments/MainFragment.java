@@ -21,6 +21,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         view.findViewById(R.id.start_tutorials_button).setOnClickListener(this);
+        view.findViewById(R.id.settings_button).setOnClickListener(this);
 
         navCon = Navigation.findNavController(view);
     }
@@ -38,6 +39,9 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         switch (v.getId()){
             case R.id.start_tutorials_button:
                 navCon.navigate(R.id.action_mainFragment_to_tutorialFragment);
+                break;
+            case R.id.settings_button:
+                navCon.navigate(R.id.action_mainFragment_to_settingFragment);
                 break;
         }
     }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SettingFragment">
+
+    <TextView
+        android:id="@+id/setting_instru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/setting_instru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/access_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="@color/blue_02"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/accessibility"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:icon="@drawable/accessibility"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_instru"
+        app:strokeColor="@color/blue_01"
+        app:strokeWidth="1dp" />
+
+    <Button
+        android:id="@+id/notificatio_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="@color/blue_02"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/notification"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:icon="@drawable/notification"
+        app:iconTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/access_btn"
+        app:strokeColor="@color/blue_01"
+        app:strokeWidth="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

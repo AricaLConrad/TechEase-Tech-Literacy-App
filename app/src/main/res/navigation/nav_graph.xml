@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_mainFragment_to_tutorialFragment"
             app:destination="@id/tutorialFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
     </fragment>
     <activity
         android:id="@+id/mediaActivity"
@@ -41,4 +44,9 @@
         android:name="com.example.techease.fragments.OverviewFragment"
         android:label="fragment_overview"
         tools:layout="@layout/fragment_overview" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.techease.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>

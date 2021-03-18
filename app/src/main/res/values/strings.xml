@@ -34,5 +34,9 @@
     <string name="call_us">Contact Us</string>
     <string name="email_us">Email Us</string>
 
+    <string name="setting_instru">Tap a button to see Accessibility options or Notification</string>
+    <string name="accessibility">Accessibility</string>
+    <string name="notification">Notification</string>
+
 
 </resources>
