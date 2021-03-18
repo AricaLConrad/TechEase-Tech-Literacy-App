@@ -20,5 +20,19 @@
     and sending images and videos through a text</string>
     <string name="start">Start Tutorial</string>
 
+    <string name="phone_control">Phone Controls</string>
+    <string name="navigate">Navigating This App</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="phone_txt">Tapping the screen to press buttons, swiping motions up and down
+        the screen to scroll.</string>
+    <string name="navigate_txt">Home button takes you to the first screen of the app, back button
+        takes you to the previous screen you were on, help open the help screen.</string>
+
+    <string name="tutorial_txt">Tutorials are grouped in categories. Pressing on a tutorial button
+    takes you sets of tutorial in that category. You can choose from the list of tutorials by pressing
+    on it to watch and/or read more about it.</string>
+    <string name="call_us">Contact Us</string>
+    <string name="email_us">Email Us</string>
+
 
 </resources>
