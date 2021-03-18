@@ -43,7 +43,7 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
                 navCon.navigate(R.id.action_settingFragment_to_notificationFragment);
                 break;
             case R.id.access_btn:
-
+                navCon.navigate(R.id.action_settingFragment_to_accessibilityFragment);
                 break;
         }
     }
