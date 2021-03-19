@@ -27,6 +27,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 dependencies {
 
@@ -35,10 +37,15 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-runtime:2.3.3'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     def nav_version = "2.3.1"// Java language implementation
     implementation "androidx.navigation:navigation-fragment:$nav_version"
     implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation platform('com.google.firebase:firebase-bom:26.7.0') // Imports the Firebase BoM
+    implementation 'com.google.firebase:firebase-analytics' // Adds the dependency for the Firebase SDK for Google Analytics
+                                                            // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-database'
 }

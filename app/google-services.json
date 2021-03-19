@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "659273854875",
+    "project_id": "techease-mobas",
+    "storage_bucket": "techease-mobas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659273854875:android:aa8e760d2b3bde1f8ffb3e",
+        "android_client_info": {
+          "package_name": "com.example.techease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659273854875-0jenrfk025719pojqt2sb2ru4f2jor4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALodNs4bMsmCgSW9CzpPEJVDAeQdS3on0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659273854875-0jenrfk025719pojqt2sb2ru4f2jor4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
