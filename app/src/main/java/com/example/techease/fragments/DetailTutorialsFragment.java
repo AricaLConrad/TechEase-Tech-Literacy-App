@@ -12,7 +12,6 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,7 +49,7 @@ public class DetailTutorialsFragment extends Fragment implements TutorialAdapter
             tutorialList = listOfTutorials.socialMediaList();
         }
 
-        RecyclerView tutorialRv = view.findViewById(R.id.tutotial_list);
+        RecyclerView tutorialRv = view.findViewById(R.id.tutorial_list);
         tutorialRv.setLayoutManager(new LinearLayoutManager(getContext()));
         TutorialAdapter tutorialAdapter = new TutorialAdapter(tutorialList,this);
         tutorialRv.setAdapter(tutorialAdapter);
