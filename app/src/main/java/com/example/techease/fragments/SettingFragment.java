@@ -25,7 +25,6 @@ public class SettingFragment extends Fragment implements View.OnClickListener{
         view.findViewById(R.id.notification_btn).setOnClickListener(this);
         view.findViewById(R.id.access_btn).setOnClickListener(this);
         navCon = Navigation.findNavController(view);
-
     }
 
     @Override

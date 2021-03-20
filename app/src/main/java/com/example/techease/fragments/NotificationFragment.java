@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import com.example.techease.R;
 
 public class NotificationFragment extends Fragment {
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

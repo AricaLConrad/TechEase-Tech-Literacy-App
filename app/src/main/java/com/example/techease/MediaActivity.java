@@ -1,11 +1,16 @@
 package com.example.techease;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -44,5 +49,7 @@ public class MediaActivity extends AppCompatActivity {
                 "\n                  and find and tap text messages.";
         TextView transcriptShow = findViewById(R.id.editTextTextMultiLine);
         transcriptShow.setText(transcript);
+        // Arica: Changing the color of the text from gray to black for readability.
+        transcriptShow.setTextColor(Color.parseColor("#000000"));
     }
 }

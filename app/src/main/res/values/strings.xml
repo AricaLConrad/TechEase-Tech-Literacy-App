@@ -7,42 +7,43 @@
     <string name="settings">Settings</string>
     <string name="start_tutorial">Start Tutorials</string>
 
-    <string name="tutorials_instruction">Tap a button below to view tutorials in that group.</string>
+    <string name="tutorials_instruction">Tap a button below to view the tutorials in that group.</string>
     <string name="phone_features">Phone Features</string>
     <string name="apps_tut">Apps</string>
     <string name="internet">Internet</string>
     <string name="social_media">Social Media</string>
-    <string name="instruction">Tap a button below to learn more about that tutorial:</string>
+    <string name="instruction">Tap a button below to learn more about that tutorial.</string>
 
     <string name="intru">The Texting Tutorial will teach you the following:</string>
-    <string name="overview">Opening up The message App, Creating and sending a text message,
-    understand the keyboard, replying to a text message, Creating and replying to a group message,
-    and sending images and videos through a text</string>
+    <string name="overview">Opening up the Message app, creating and sending a text message,
+    understanding the keyboard, replying to a text message, creating and replying to a group message,
+    and sending images and videos through a text.</string>
     <string name="start">Start Tutorial</string>
 
     <string name="phone_control">Phone Controls</string>
     <string name="navigate">Navigating This App</string>
     <string name="tutorials">Tutorials</string>
-    <string name="phone_txt">Tapping the screen to press buttons, swiping motions up and down
-        the screen to scroll.</string>
-    <string name="navigate_txt">Home button takes you to the first screen of the app, back button
-        takes you to the previous screen you were on, help open the help screen.</string>
+    <string name="phone_txt">To press buttons, tap the screen where the button is located.
+        To scroll up and down the screen, use up and down swiping motions. </string>
+    <string name="navigate_txt">The Home button (the icon looks like a house) takes you to the first screen of the app,
+        the Back button (the icon looks like an arrow) takes you to the previous screen you were on, and the
+        Help button (has a question mark icon) opens the Help screen.</string>
 
-    <string name="tutorial_txt">Tutorials are grouped in categories. Pressing on a tutorial button
-    takes you sets of tutorial in that category. You can choose from the list of tutorials by pressing
+    <string name="tutorial_txt">Tutorials are grouped in categories. Tapping on a tutorial button
+    takes you to a set of tutorials in that category. You can choose from the list of tutorials by pressing
     on it to watch and/or read more about it.</string>
     <string name="call_us">Contact Us</string>
     <string name="email_us">Email Us</string>
 
-    <string name="setting_instru">Tap a button to see Accessibility options or Notification</string>
+    <string name="setting_instru">Tap a button to see the accessibility options or notifications.</string>
     <string name="accessibility">Accessibility</string>
-    <string name="notification">Notification</string>
+    <string name="notification">Notifications</string>
 
-    <string name="notification_alert">There is no notification at this time. Please come back later!</string>
-    <string name="access_instruction">Tap a button to customize your accessibility options</string>
+    <string name="notification_alert">There are no notifications at this time. Please come back later!</string>
+    <string name="access_instruction">Tap a button to customize your accessibility options.</string>
     <string name="text_to_speech">Text-to-Speech</string>
     <string name="vision_option">Vision Options</string>
-    <string name="voice_command">Voice Command</string>
+    <string name="voice_command">Voice Commands</string>
 
 
 </resources>
