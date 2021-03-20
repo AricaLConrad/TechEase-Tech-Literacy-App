@@ -28,10 +28,10 @@ public class AccessibilityFragment extends Fragment {
             Toast.makeText(getContext(), "Text-to-Speech activated", Toast.LENGTH_SHORT).show();
         });
         visionOption_btn.setOnClickListener(v -> {
-            Toast.makeText(getContext(),"Vision Option activated", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),"Vision Options activated", Toast.LENGTH_SHORT).show();
         });
         voiceCommand_btn.setOnClickListener(v -> {
-            Toast.makeText(getContext(),"Voice command activated", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(),"Voice Commands activated", Toast.LENGTH_SHORT).show();
         });
     }
 

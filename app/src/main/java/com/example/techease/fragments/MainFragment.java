@@ -24,6 +24,9 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         view.findViewById(R.id.settings_button).setOnClickListener(this);
 
         navCon = Navigation.findNavController(view);
+
+        // Arica: Will likely need this in the future to get the action menu to work in the fragment.
+        // setHasOptionsMenu(true);
     }
 
     @Override

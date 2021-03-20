@@ -15,7 +15,7 @@ public class ListOfTutorials {
     public ArrayList<Tutorial> phoneFeaturesList(){
 
         List<String> featureList = List.of("Contact List", "Calling", "Texting", "Camera", "Photos",
-                "Voice Mail", "Videos", "Music");
+                "Voicemail", "Videos", "Music");
 
         ArrayList<Tutorial> phoneFeatures = new ArrayList<>();
         for (int i = 0; i < featureList.size(); i++ ){
@@ -26,8 +26,8 @@ public class ListOfTutorials {
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     public ArrayList<Tutorial>appTutorialList(){
-        List<String> listOfAppTut = List.of("Calendar", "Alarm and Clock", "Weather", "Maps",
-                "Apps Store", "Files", "Contacts", "Calculator", "Play Music");
+        List<String> listOfAppTut = List.of("Calendar", "Alarms and Clock", "Weather", "Maps",
+                "App Store", "Files", "Contacts", "Calculator", "Play Music");
 
         ArrayList<Tutorial> appList = new ArrayList<>();
         for (int i = 0; i < listOfAppTut.size(); i++){
@@ -38,9 +38,9 @@ public class ListOfTutorials {
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     public ArrayList<Tutorial>internetList(){
-        List<String> listOfInternetTut = List.of( "Web 101","Ads safety", "Cookies", "Using search Engine", "Personal Info on Web",
-                "Safe Browsing", "Online Purchase", "Antivirus", "Password Online"
-                , "Download Online", "Post Online");
+        List<String> listOfInternetTut = List.of( "Web 101","Ad Safety", "Cookies", "Using a Search Engine", "Personal Info on Web",
+                "Safe Browsing", "Online Purchases", "Antivirus", "Passwords Online"
+                , "Downloading Online", "Posting Online");
 
         ArrayList<Tutorial> internetList = new ArrayList<>();
         for (int i = 0; i < listOfInternetTut.size(); i++){
@@ -51,8 +51,8 @@ public class ListOfTutorials {
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     public ArrayList<Tutorial>socialMediaList(){
-        List<String> listOfSMTutorial = List.of("Social media 101", "Zoom", "Facebook", "Instagram", "SnapChat"
-                , "TiK ToK", "Twitter", "Pinterest", "YouTube", "Messenger", "FaceTime");
+        List<String> listOfSMTutorial = List.of("Social Media 101", "Zoom", "Facebook", "Instagram", "Snapchat"
+                , "Tik Tok", "Twitter", "Pinterest", "YouTube", "Messenger", "FaceTime");
 
         ArrayList<Tutorial> mediaList = new ArrayList<>();
         for (int i = 0; i < listOfSMTutorial.size(); i++){
